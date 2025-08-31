@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     "Competition",
     "2025",
   ],
-  metadataBase: new URL("https://sankalp-site.vercel.app/"),
+  metadataBase: new URL("https://sankalp2025.vercel.app/"),
   openGraph: {
     title: "Sankalp",
     description:
       "Where the boldest builders come to play. Join Sankalp, the ultimate hackathon experience for innovators, creators, and tech enthusiasts.",
-    url: "https://sankalp-site.vercel.app/",
+    url: "https://sankalp2025.vercel.app/",
     siteName: "Sankalp",
     locale: "en_US",
     type: "website",
@@ -53,24 +53,24 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon_io/favicon.ico" },
       {
-        url: "/favicon_io/tab_logo.jpg",
+        url: "/favicon_io/tab_logo.png",
         sizes: "16x16",
         type: "image/png",
       },
       {
-        url: "/favicon_io/tab_logo.jpg",
+        url: "/favicon_io/tab_logo.png",
         sizes: "32x32",
         type: "image/png",
       },
     ],
     apple: [
       {
-        url: "/favicon_io/tab_logo.jpg",
+        url: "/favicon_io/tab_logo.png",
         sizes: "180x180",
         type: "image/png",
       },
     ],
-    shortcut: [{ url: "/favicon_io/tab_logo.jpg" }],
+    shortcut: [{ url: "/favicon_io/tab_logo.png" }],
   },
 };
 

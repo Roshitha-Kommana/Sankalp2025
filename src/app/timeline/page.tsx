@@ -83,7 +83,7 @@ export default function TimelinePage() {
           <>
             <b>Starts:</b> 7th September 2025, 9:00 AM IST
             <br />
-            <b>Ends:</b> 10th September 2025, 12:00 PM IST
+            <b>Ends:</b> 10th September 2025, 11:59 PM IST
             <br />
             <b>Where:</b> Google Forms 
             <br />
@@ -110,6 +110,7 @@ export default function TimelinePage() {
               💡 Note: If you don&apos;t have past experience, feel free to
               showcase your best ideas instead!
             </span>
+            <br />
           </>
         }
 
@@ -129,7 +130,7 @@ export default function TimelinePage() {
           title="Submission Deadline"
           content={
             <>
-              <b>Deadline:</b> 10th September 2025, 12:00 PM IST
+              <b>Deadline:</b> 10th September 2025, 11:59 PM IST
               <br />
               This is your final call to upload your Round 1 submission.
               <br />
@@ -150,7 +151,7 @@ export default function TimelinePage() {
             <>
               <b>Date:</b> 14th September 2025
               <br />
-              First batch of selected teams will be announced today.
+              First batch of selected teams will be announced on this day.
               <br />
               If you made the cut, you'll be added to a
               dedicated group for all further updates and event prep info.

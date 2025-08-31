@@ -212,7 +212,7 @@ const FAQSection = () => {
     {
       question: "Are there prizes?",
       answer:
-        "Yes! Winners will receive cash prizes and goodies.",
+        "Yes! Winners will receive cash prizes, swags and every participant will get a certificate.",
     },
     {
       question: "Will all participants get certificates?",
@@ -230,7 +230,7 @@ const FAQSection = () => {
       answer: "Yes, Wi-Fi will be available at the venue.",
     },
     {
-      question: "How will I receive updates?",
+      question: "How will I receive updates after my registration?",
       answer:
         "Updates will be shared via WhatsApp groups.",
     },

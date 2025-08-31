@@ -13,11 +13,10 @@ const MobileHero = () => {
   return (
     <>
       <section className="hero host-grotesk relative w-screen min-h-screen p-6 flex flex-col items-center justify-center text-[#141414] overflow-hidden border-[24px] border-[#141414]">
-        
         {/* Logos - Centered */}
         <div className="flex flex-col items-center justify-center gap-6 mb-10">
           <img
-            className="hackwave-img w-48 md:w-64"
+            className="hackwave-img w-48 md:w-64 -mt-8"
             src="/assets/SANKALP.png"
             alt="Sankalp Logo"
           />
@@ -26,11 +25,17 @@ const MobileHero = () => {
             src="/assets/illust.png"
             alt="Mascot"
           />
+          {/* INTERNAL HACKATHON - Bold, after mascot image */}
+          <p
+            className={`font-extrabold text-lg md:text-xl text-black tracking-wide uppercase ${dela.className}`}
+            style={{ letterSpacing: "0.08em" }}
+          >
+            INTERNAL HACKATHON
+          </p>
         </div>
 
         {/* Info Row */}
         <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl gap-10 text-center md:text-left">
-          
           {/* Left - Hackathon Dates */}
           <div className="flex flex-col items-center md:items-start">
             <p className="text-xl md:text-2xl font-semibold">
@@ -42,7 +47,7 @@ const MobileHero = () => {
 
           {/* Right - Prizepool */}
           <div className="flex flex-col items-center md:items-end">
-            <p className="text-2xl md:text-3xl font-bold">₹30k Prizepool</p>
+            <p className="text-2xl md:text-3xl font-bold">₹30K Prizepool</p>
           </div>
 
           {/* Middle - College Info */}
@@ -50,17 +55,12 @@ const MobileHero = () => {
             <p
               className={`text-2xl md:text-3xl font-bold tracking-wide text-gray-900 ${dela.className}`}
             >
-              MVGR College of Engineering
+              MVGR College of Engineering(A)
             </p>
-            <p className="text-lg md:text-xl font-medium text-gray-700">
-              Department of CSE
-            </p>
+            <span className="block text-black font-thin text-base md:text-lg tracking-wide mt-1">Organised by CSE in collaboration with CSSD</span>
           </div>
-
-
         </div> {/* ✅ closing the flex container */}
       </section>
-
       <TextReveal />
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NoteCard from "./NoteCard";
 
 const hoverBgColors = [
   "#c5ffc9", // pastel green
@@ -78,49 +79,57 @@ const Countdown: React.FC = () => {
   );
 
   return (
-    <div
-      className="
-        w-11/12
-        max-w-4xl
-        mx-auto
-        bg-[#dcd0fe]
-        rounded-2xl md:rounded-3xl
-        shadow-2xl
-        border border-gray-300
-        overflow-hidden
-        flex flex-col
-        p-3 sm:p-5
-        mt-15 md:mt-15
-      "
-    >
-      {/* Heading */}
-      <h2 className="text-2xl md:text-5xl mt-5 sm:pt-5 font-extrabold text-gray-900 mb-10 tracking-tight text-center">
-        Hurry Up! Time is Running Out ⏳
-      </h2>
-
-      {/* Timer */}
-      <Timer />
-
-      {/* Register Button */}
-      <a
-        href="https://forms.gle/FiBkTbkz63U89HDWA"
-        target="_blank"
-        rel="noopener noreferrer"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          backgroundColor: hovered ? hoverBgColors[colorIndex] : "transparent",
-        }}
-        className="mt-10 self-center inline-block px-6 py-3 text-black font-semibold text-base md:text-lg rounded-md border-2 border-gray-900 transition-colors duration-200 cursor-pointer"
+    <>
+      <div
+        className="
+          w-11/12
+          max-w-4xl
+          mx-auto
+          bg-[#dcd0fe]
+          rounded-2xl md:rounded-3xl
+          shadow-2xl
+          border border-gray-300
+          overflow-hidden
+          flex flex-col
+          p-3 sm:p-5
+          mt-15 md:mt-15
+        "
       >
-        Register Now
-      </a>
+        {/* Heading */}
+        <h2 className="text-2xl md:text-5xl mt-5 sm:pt-5 font-extrabold text-gray-900 mb-10 tracking-tight text-center">
+          Hurry Up! Time is Running Out ⏳
+        </h2>
 
-      {/* Note */}
-      <p className="mt-4 text-gray-800 font-semibold text-sm md:text-base flex justify-center items-center gap-2 text-center">
-        👀 Be among the first 100 and grab your exclusive, super-cool swags! 😜
-      </p>
-    </div>
+        {/* Timer */}
+        <Timer />
+
+        {/* Register Button */}
+        <a
+          href="https://forms.gle/FiBkTbkz63U89HDWA"
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          style={{
+            backgroundColor: hovered ? hoverBgColors[colorIndex] : "transparent",
+          }}
+          className="mt-10 self-center inline-block px-6 py-3 text-black font-semibold text-base md:text-lg rounded-md border-2 border-gray-900 transition-colors duration-200 cursor-pointer"
+        >
+          Register Now
+        </a>
+
+        {/* Note */}
+        <p className="mt-4 text-gray-800 font-semibold text-sm md:text-base flex justify-center items-center gap-2 text-center">
+          👀 Be among the first 100 and grab your exclusive, super-cool swags! 😜
+        </p>
+      </div>
+      {/* Important Note Card OUTSIDE the countdown box */}
+      <NoteCard>
+        <span className="block font-bold mb-1">Remember</span>
+        Only team leaders should fill the form and join the WhatsApp group.<br />
+        No restrictions on team formation – members may belong to different departments or academic years.
+      </NoteCard>
+    </>
   );
 };
 

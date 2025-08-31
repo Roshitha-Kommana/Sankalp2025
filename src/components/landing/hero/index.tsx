@@ -698,8 +698,11 @@ const Hero = () => {
             <h1
               className={`text-black text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-wide leading-tight ${dela.className}`}
             >
-              Maharaj Vijayaram Gajapathi Raj College of Engineering
+              Maharaj Vijayaram Gajapathi Raj College of Engineering(A)
             </h1>
+            <div className="mt-1">
+              <span className="block text-black font-thin text-xs sm:text-sm md:text-base lg:text-lg tracking-wide">Organised by CSE in collaboration with CSSD</span>
+            </div>
           </div>
 
 
@@ -718,7 +721,7 @@ const Hero = () => {
             <div className="flex flex-col items-center md:items-start text-center md:text-left order-1 md:order-1">
               <img
                 className="hackwave-img w-48 md:w-64 lg:w-80"
-                src="/assets/SANKALP.png"
+                src="/assets/SANKALP_.png"
                 alt="Sankalp Logo"
               />
             </div>
@@ -742,7 +745,7 @@ const Hero = () => {
                 </p>
                 <div className="mt-6 space-y-2">
                   <p className="text-xl md:text-2xl font-bold text-[#141414]">
-                    ₹30k Prizepool
+                    ₹30K Prizepool
                   </p>
                 </div>
               </div> */

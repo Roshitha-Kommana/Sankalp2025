@@ -83,8 +83,8 @@ const TeamCard: React.FC<TeamCardProps> = ({
               {member.role}
             </p>
           )}
-          <p className="text-xs text-gray-700 mb-1">
-            <span className="font-semibold">Dept:</span> {member.department}
+          <p className="text-sm text-gray-700 mb-1 flex items-center justify-center whitespace-nowrap mx-auto">
+            <span className="font-semibold text-sm">Dept:</span>&nbsp;<span className="whitespace-nowrap text-sm">{member.department}</span>
           </p>
           {member.phone && (
             <p className="text-xs text-gray-700">
@@ -140,8 +140,8 @@ const TeamCard: React.FC<TeamCardProps> = ({
             </p>
           )}
           <p className="text-sm text-gray-700 mb-1">
-            <span className="font-semibold">Department:</span>{" "}
-            {member.department}
+            <span className="font-semibold text-md">Dept:</span>{" "}
+            <span className="whitespace-nowrap text-md">{member.department}</span>
           </p>
           {member.phone && (
             <p className="text-sm text-gray-700">

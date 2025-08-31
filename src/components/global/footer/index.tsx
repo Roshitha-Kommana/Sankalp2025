@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             Sankalp 2025
           </h2>
           <p className="text-lg md:text-xl font-semibold text-gray-800">
-            Maharaj Vijayaram Gajapathi Raj College of Engineering
+            Maharaj Vijayaram Gajapathi Raj College of Engineering(A)
           </p>
         </div>
 

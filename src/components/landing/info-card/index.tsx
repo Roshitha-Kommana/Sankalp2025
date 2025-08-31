@@ -37,8 +37,14 @@ const RoundCard = ({
       className="round-card relative w-full text-[#141414] rounded-2xl p-8 flex flex-col justify-between h-[500px] md:h-[350px]"
       style={{ backgroundColor: bgColor }}
     >
-      {/* Round Icon - Emoji representation of the round type */}
-      <div className="text-5xl mb-4">{icon}</div>
+
+      {/* Row with Icon and FREE tag (for Round 1) */}
+      <div className="flex items-center justify-between mb-4 w-full">
+        <div className="text-5xl">{icon}</div>
+        {index === 0 && (
+          <span className="font-extrabold text-black text-xl bg-white px-4 py-1 rounded-full border border-[#00C853] ml-3" style={{letterSpacing: '1px'}}>FREE</span>
+        )}
+      </div>
 
       {/* Card Content Container */}
       <div className="flex-1">
@@ -98,19 +104,18 @@ const Card = ({ title, copy, index }: CardProps) => {
 const SimpleRewardsSection = () => {
   const rewards = [
     {
-      title: "₹30k Prize Pool",
+      title: "₹30K Prize Pool",
       copy: "Compete for massive cash prizes and recognition. Win big and make your mark in the hackathon world.",
       index: 1,
     },
     {
       title: "Exclusive Swags",
-      copy: "Get your hands on exclusive merchandise and collectibles that you won't find anywhere else.",
+      copy: "Get your hands on exclusive merchandise and collectibles that you won't find anywhere else. Every participant will also receive a participation certificate!",
       index: 2,
     },
-  
     {
       title: "Stay & Meals",
-      copy: "Enjoy comfortable accommodation and delicious food throughout your hackathon journey.",
+      copy: "Enjoy a basic bed to rest in a classroom during the event and delicious food throughout your hackathon journey.",
       index: 3,
     },
   ];
@@ -485,7 +490,7 @@ export default function InfoCard() {
                 }}
               >
                 <Card
-                  title="₹30k Prize Pool"
+                  title="₹30K Prize Pool"
                   copy="Compete for massive cash prizes and recognition. Win big and make your mark in the hackathon world."
                   index={1}
                 />
@@ -512,7 +517,7 @@ export default function InfoCard() {
               >
                 <Card
                   title="Stay & Meals Covered"
-                  copy="Enjoy comfortable accommodation and delicious food throughout your hackathon journey."
+                  copy="Enjoy a basic bed to rest in a classroom during the event and delicious food throughout your hackathon journey."
                   index={3}
                 />
               </div>
