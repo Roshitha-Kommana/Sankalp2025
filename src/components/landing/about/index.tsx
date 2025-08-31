@@ -239,7 +239,7 @@ const TextReveal: React.FC = () => {
 
 
         >
-          <div className="w-full h-full mx-auto flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-xl bg-[#f9ffa5] p-4 sm:p-6 md:p-8 lg:mt-30">
+          <div className="w-full h-full mx-auto flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-xl bg-[#f9ffa5] p-4 sm:p-6 md:p-8 lg:mt-70">
             <h1 className=" w-full max-w-[95vw] sm:max-w-[90vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[90vw] text-[#141414] font-black leading-relaxed px-2 sm:px-4 mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-[clamp(1.8rem,3vw,3rem)] sm:text-[clamp(1.2rem,2vw,1.6rem)] md:text-[clamp(2.5rem,4vw,4.5rem)]">
               Playground for bold ideas and creative interfaces.
             </h1>
