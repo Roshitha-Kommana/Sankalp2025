@@ -171,7 +171,7 @@ export default function TimelinePage() {
             title="Final Payment Deadline"
             content={
               <>
-                <b>Deadline:</b> 17th August 2025
+                <b>Deadline:</b> 17th September 2025
                 <br />
                 This is the final date to complete your payment.
                 <br />
