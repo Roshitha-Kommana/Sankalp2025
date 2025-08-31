@@ -163,7 +163,7 @@ export default function TimelinePage() {
     },
     
     {
-      title: "17th August 2025",
+      title: "17th September 2025",
         content: (
           <Card
             index={4}

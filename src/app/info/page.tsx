@@ -79,7 +79,7 @@ export default function HackwaveInfoPage() {
                   project.
                 </li>
                 <li>
-                  <b>Round 2 — Offline Hackathon:</b> Build from scratch in 36
+                  <b>Round 2 — Offline Hackathon:</b> Build from scratch in 24
                   hours at the venue.
                 </li>
               </ol>

@@ -205,7 +205,7 @@ const TextReveal: React.FC = () => {
         ref={aboutRef}
         className="about anime-text-container bg-[#141414] text-black relative w-full h-full min-h-screen p-3 sm:p-4 md:p-6 lg:p-8 overflow-x-hidden"
       >
-        <div className="w-full h-full flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl border border-dashed border-[rgb(60,60,60)] p-4 sm:p-6 md:p-8 mt-12 md:mt-16 lg:mt-40 mb-27">
+        <div className="w-full h-full flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl border border-dashed border-[rgb(60,60,60)] p-4 sm:p-6 md:p-8 mt-12 md:mt-16 lg:mt-40 lg:mb-60">
           <h1 className="text-white mb-2 sm:mb-8 md:mb-12 lg:mb-16 font-black leading-tight px-2 text-[clamp(1.5rem,2vw,1.6rem)] sm:text-[clamp(1.2rem,1.5vw,1.8rem)] md:text-[clamp(1.3rem,2.9vw,3.5rem)]">
             About{" "}
             <span className="inline-block px-2 sm:px-3 md:px-4 lg:px-6 bg-pink-300 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl border-2 sm:border-3 md:border-4 lg:border-6">
@@ -239,7 +239,7 @@ const TextReveal: React.FC = () => {
 
 
         >
-          <div className="w-full h-full mx-auto flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-xl bg-[#f9ffa5] p-4 sm:p-6 md:p-8 lg:mt-70">
+          <div className="w-full h-full mx-auto flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-xl bg-[#f9ffa5] p-4 sm:p-6 md:p-8 lg:mt-30 lg:mb-50">
             <h1 className=" w-full max-w-[95vw] sm:max-w-[90vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[90vw] text-[#141414] font-black leading-relaxed px-2 sm:px-4 mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-[clamp(1.8rem,3vw,3rem)] sm:text-[clamp(1.2rem,2vw,1.6rem)] md:text-[clamp(2.5rem,4vw,4.5rem)]">
               Playground for bold ideas and creative interfaces.
             </h1>
