@@ -46,12 +46,17 @@ const MobileHero = () => {
           </div>
 
           {/* Right - Prizepool */}
-          <div className="flex flex-col items-center md:items-end">
-            <p className="text-2xl md:text-3xl font-bold">₹30K Prizepool</p>
+          <div className="flex flex-col items-center md:items-end mb-0 -mt-3">
+            <span
+              className="inline-block px-3 py-1 bg-pink-300 rounded-full border border-pink-400 text-base md:text-lg font-bold text-[#141414] shadow-md"
+              style={{ minWidth: 'fit-content' }}
+            >
+              ₹30K Prizepool
+            </span>
           </div>
 
           {/* Middle - College Info */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center -mt-6">
             <p
               className={`text-2xl md:text-3xl font-bold tracking-wide text-gray-900 ${dela.className}`}
             >
