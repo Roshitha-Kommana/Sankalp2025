@@ -4,7 +4,8 @@ import "./globals.css";
 import { LenisProvider } from "@/components/providers/LenisProvider";
 import Navbar from "@/components/global/nav";
 import Footer from "@/components/global/footer";
-import ScrollButton from "@/components/landing/ScrollButton"; // 👈 import your button here
+import ScrollButton from "@/components/landing/ScrollButton";
+import Script from "next/script"; // 👈 import Script
 
 const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],
@@ -92,8 +93,22 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <ScrollButton /> {/* 👈 Global scroll button here */}
+          <ScrollButton />
         </LenisProvider>
+
+        {/* ✅ Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2FB43GEC4G"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2FB43GEC4G');
+          `}
+        </Script>
       </body>
     </html>
   );
