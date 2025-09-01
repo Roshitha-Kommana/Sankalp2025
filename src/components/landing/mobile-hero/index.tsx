@@ -16,13 +16,13 @@ const MobileHero = () => {
         {/* Logos - Centered */}
         <div className="flex flex-col items-center justify-center gap-6 mb-10">
           <img
-            className="hackwave-img w-48 md:w-64 -mt-8"
+            className="hackwave-img w-48 md:w-64 -mt-8 mt-8"
             src="/assets/SANKALP.png"
             alt="Sankalp Logo"
           />
           <img
-            className="hackwave-img w-40 md:w-56"
-            src="/assets/illust.png"
+            className="hackwave-img w-40 md:w-56 -mt-8"
+            src="/assets/illust1.png"
             alt="Mascot"
           />
           {/* INTRA-COLLEGE HACKATHON - Bold, after mascot image */}

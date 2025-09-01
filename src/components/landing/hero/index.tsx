@@ -219,7 +219,7 @@ const Hero = () => {
         className="hero host-grotesk relative w-screen min-h-0 p-2 flex items-center justify-center text-[#141414]"
       >
         {/* Top Center College Name */}
-          <div className="absolute top-4 left-1/2 -translate-x-[48%] text-center z-50 w-max max-w-full px-2 mt-5">
+          <div className="absolute top-4 left-1/2 -translate-x-[48%] text-center z-50 w-max max-w-full px-2 mt-[0.375rem]">
             <h1
               className={`text-black text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-wide leading-tight ${dela.className}`}
             >
@@ -238,22 +238,20 @@ const Hero = () => {
             ============================================================================ */}
         <div
           ref={heroHeaderRef}
-          className="hero-header absolute left-1/2 top-1/2 flex items-center justify-center w-full"
-          style={{ transform: "translate(-50%, -30%)" }}
+          className="hero-header absolute left-0 top-0 w-full h-full mt-[6.25rem]"
+          style={{ height: '100%', width: '100%', zIndex: 10 }}
         >
-          <div className="flex items-center justify-center w-full">
-            <img
-              src="/assets/sankalp2022.png"
-              alt="Sankalp 2025 Logo"
-              className="mx-auto w-auto h-auto"
-              style={{ marginTop: 0 }}
-            />
-          </div>
+          <img
+            src="/assets/sankalp2025.png"
+            alt="Sankalp 2025 Logo"
+            className="w-full h-full object-contain"
+            style={{ display: 'block', maxWidth: '100%', maxHeight: '100%' }}
+          />
         </div>
         {/* Remove the animated text from the hero section and move it below */}
       </section>
       {/* Animated text container now below the hero section */}
-      <div className="w-full flex justify-center items-center mt-24">
+  <div className="w-full flex justify-center items-center mt-8">
         <h1 className="hero-heading animated-text leading-none text-2xl md:text-4xl lg:text-5xl">
           <span className="text-segment text-2xl md:text-4xl lg:text-6xl" style={{opacity: 1}}>Dream. Design. Develop.</span>
           <span className="text-segment text-2xl md:text-4xl lg:text-6xl" style={{opacity: 1}}> 24 hours of nonstop innovation.</span>

@@ -233,11 +233,12 @@ export default function InfoCard() {
       // PHASE 2: SCROLL TRIGGER CONFIGURATION - Pin section and control animations
       // ============================================================================
       if (heroRef.current) {
+        // Increase the scroll distance for the pin to slow down the card animation (much slower)
         ScrollTrigger.create({
           trigger: heroRef.current, // Element that triggers the animation
           pin: true, // Pin the hero section during scroll
           start: "top top", // Start pinning when top of hero hits top of viewport
-          end: `+=${window.innerHeight * 0.3}`, // Minimal scroll for ultra fast round card animation
+          end: `+=${window.innerHeight * 2.5}`, // Much longer scroll for much slower card animation
           pinSpacing: true, // Maintain scroll space for pinned element
           markers: false, // Disable debug markers in production
           onUpdate: (self) => {
@@ -276,17 +277,19 @@ export default function InfoCard() {
               // ============================================================================
               // SECOND CARD ANIMATION - Slides up to cover first card
               // ============================================================================
+              // Make even slower: animate from 50% to 99% scroll on mobile, 98% on desktop
               if (progress >= 0.5) {
-                // Phase 2: Second card moves from 150% to same position as first (50-100% scroll)
-                const secondCardProgress = (progress - 0.5) / 0.5; // Normalize progress to 0-1
-                const targetY = 40 - mobileOffset; // Same target as first card
+                const animStart = 0.5;
+                const animEnd = isMobile ? 0.99 : 0.98;
+                const animRange = animEnd - animStart;
+                const clampedProgress = Math.min(1, Math.max(0, (progress - animStart) / animRange));
+                const targetY = 40 - mobileOffset;
                 gsap.set(secondCard, {
-                  y: `${150 - (150 - targetY) * secondCardProgress}%`, // Smooth interpolation from 150% to targetY
+                  y: `${150 - (150 - targetY) * clampedProgress}%`,
                 });
               } else {
-                // Phase 1: Second card stays below viewport (0-50% scroll)
                 gsap.set(secondCard, {
-                  y: "150%", // Keep hidden below viewport
+                  y: "150%",
                 });
               }
             }
