@@ -239,13 +239,13 @@ const Hero = () => {
         <div
           ref={heroHeaderRef}
           className="hero-header absolute left-0 top-0 w-full h-full mt-[6.25rem]"
-          style={{ height: '100%', width: '100%', zIndex: 10 }}
+          style={{ height: '100%', width: '100%', zIndex: 10, backgroundColor: '#fcf5ef' }}
         >
           <img
-            src="/assets/sankalp2025.png"
+            src="/assets/sankalp2025_.png"
             alt="Sankalp 2025 Logo"
             className="w-full h-full object-contain"
-            style={{ display: 'block', maxWidth: '100%', maxHeight: '100%' }}
+            style={{ display: 'block', maxWidth: '100%', maxHeight: '100%', marginTop: '2rem' }}
           />
         </div>
         {/* Remove the animated text from the hero section and move it below */}
