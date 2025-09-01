@@ -107,7 +107,7 @@ const TeamPage = () => {
           </div>
           <div className="bg-[#fcf2e8] border-l-8 shadow-lg rounded-2xl p-8 text-center mb-16 max-w-xl mx-auto font-serif">
             <p className="text-lg md:text-xl text-[#444] mb-3 leading-relaxed font-serif">
-              We extend our heartfelt gratitude to our respected <span className="font-bold text-[#141414]">Director P. S. Sitharama Raju garu</span> and <span className="font-bold text-[#141414]">Principal Dr. Y. M. C. Sekhar garu</span> for their constant support, guidance, and encouragement in making <span className="font-extrabold">SANKALP</span> a grand success.
+              We extend our heartfelt gratitude to our respected <span className="font-bold text-[#141414]">Director P. S. Sitharama Raju garu</span> and <span className="font-bold text-[#141414]">Principal Dr. Y. M. C. Sekhar garu</span> for their constant support, guidance, and encouragement, which continues to inspire us as we move forward in conducting <span className="font-extrabold">SANKALP</span> successfully.
             </p>
           </div>
 
