@@ -89,7 +89,7 @@ export default function TimelinePage() {
             <br />
             <br />
             Time to show off what your team&apos;s made of. Submit a short,
-            punchy PPT {"{"}max 10 slides{"}"} showcasing a past project you&apos;re
+            punchy PPT {"{"}max 6-7 slides{"}"} showcasing a past project you&apos;re
             proud of.
             <br />
             <ul className="list-disc ml-6 mt-2 space-y-1">

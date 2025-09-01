@@ -102,7 +102,7 @@ const FAQSection = () => {
       question: "What do we need to submit in Round 1?",
       answer: (
         <span>
-          A PPT (max 10 slides) of a previous project your team has built.
+          A PPT (max 6-7 slides) of a previous project your team has built.
           Include:
           <br />
           <br />
