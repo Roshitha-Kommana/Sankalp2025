@@ -45,10 +45,6 @@ const organizers: TeamMember[] = [
   {
     id: 4,
     name: "Dr. P. Rama Santosh Naidu",
-<<<<<<< HEAD
-=======
-    phone: "+91 90001 80181",
->>>>>>> eb3c4ee5df1af35ea83d81a14b9675a8426e7910
     department: "Computer Science and Engineering (CSE)",
     role: "Distinguished Assistant Professor",
     category: "organizer",
@@ -58,7 +54,6 @@ const organizers: TeamMember[] = [
 
 // Team Members data
 const teamMembers: TeamMember[] = [
-<<<<<<< HEAD
   { id: 1, name: "Varshini", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/varshini1.jpg"},
   { id: 2, name: "Balaji Rao", department: "Computer Science and Engineering (CSE)", category: "team",image: "/balaji.jpg" },
   { id: 3, name: "Chaitanya Varma", department: "Computer Science and Engineering (CSE)", category: "team",image: "/chaitanya.jpg" },
@@ -72,21 +67,6 @@ const teamMembers: TeamMember[] = [
   { id: 11, name: "Jaswanth", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/jaswanth_.jpg"},
   { id: 12, name: "Harsha", department: "Computer Science and Engineering (CSE)", category: "team",image: "/Harsha.jpg" },
   { id: 13, name: "Roshitha", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/Roshitha.jpg"},
-=======
-  { id: 1, name: "Varshini", phone: "+91 93925 82944", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/varshini1.jpg"},
-  { id: 2, name: "Balaji Rao", phone: "+91 94904 00535", department: "Computer Science and Engineering (CSE)", category: "team",image: "/balaji.jpg" },
-  { id: 3, name: "Chaitanya Varma", phone: "+91 80967 24666", department: "Computer Science and Engineering (CSE)", category: "team",image: "/chaitanya.jpg" },
-  { id: 4, name: "Bhuvana", phone: "+91 86392 77804", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/bhuvana.jpg"},
-  { id: 5, name: "Renuka", phone: "+91 99666 70197", department: "Computer Science and Engineering (CSE)", category: "team",image: "/renuka.jpg" },
-  { id: 6, name: "Prashanti", phone: "+91 98714 23404", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/prashantii.jpg"},
-  { id: 7, name: "Usha", phone: "+91 63058 45616", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/usha.jpg"},
-  { id: 8, name: "Manoj", phone: "+91 91546 76764", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/manoj.jpg"},
-  { id: 9, name: "Satya Mahesh", phone: "+91 94942 52900", department: "Computer Science and Engineering (CSE)", category: "team",image: "/satya_mahesh.jpg" },
-  { id: 10, name: "Sai Charan", phone: "+91 62815 01174", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/SaiCharan.jpg"},
-  { id: 11, name: "Jaswanth", phone: "+91 62815 01476", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/jaswanth_.jpg"},
-  { id: 12, name: "Harsha", phone: "+91 81796 33582", department: "Computer Science and Engineering (CSE)", category: "team",image: "/Harsha.jpg" },
-  { id: 13, name: "Roshitha", phone: "+91 63026 80957", department: "Computer Science and Engineering (CSE)", category: "team" ,image: "/Roshitha.jpg"},
->>>>>>> eb3c4ee5df1af35ea83d81a14b9675a8426e7910
 ];
 
 const TeamPage = () => {
