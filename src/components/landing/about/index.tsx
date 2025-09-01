@@ -69,8 +69,8 @@ const TextReveal: React.FC = () => {
     // SCROLL TRIGGER SETUP
     animeTextContainersRef.current.forEach((container, index) => {
   const isMobile = window.innerWidth < 768;
-  // Slower animation for all devices
-  const scrollMultiplier = 1.5;
+  // Make animation much slower on mobile
+  const scrollMultiplier = isMobile ? 4 : 1.5;
       ScrollTrigger.create({
         trigger: container,
         pin: container,
@@ -206,7 +206,7 @@ const TextReveal: React.FC = () => {
         ref={aboutRef}
   className="about anime-text-container bg-[#141414] text-black relative w-full h-full min-h-[90vh] lg:min-h-[100vh] p-3 sm:p-4 md:p-6 lg:p-8 overflow-x-hidden"
       >
-  <div className="w-full h-full flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl border border-dashed border-[rgb(60,60,60)] p-4 sm:p-6 md:p-8 mt-0 -mt-8 md:mt-16 lg:mt-40 lg:mb-60">
+  <div className="w-full h-full flex flex-col justify-center items-center text-center rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl border border-dashed border-[rgb(60,60,60)] p-4 sm:p-6 md:p-8 -mt-16 md:mt-16 lg:mt-40 lg:mb-60">
           <h1 className="text-white mb-2 sm:mb-8 md:mb-12 lg:mb-16 font-black leading-tight px-2 mt-8 lg:mt-32 text-[clamp(1.5rem,2vw,1.6rem)] sm:text-[clamp(1.2rem,1.5vw,1.8rem)] md:text-[clamp(1.3rem,2.9vw,3.5rem)]">
             About{" "}
             <span className="inline-block px-2 sm:px-3 md:px-4 lg:px-6 bg-pink-300 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl border-2 sm:border-3 md:border-4 lg:border-6">
