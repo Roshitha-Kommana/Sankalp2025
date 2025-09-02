@@ -44,18 +44,30 @@ const RoundCard = ({
           {index === 0 && (
             <>
               <span className="font-extrabold text-black text-xl bg-white px-4 py-1 rounded-full border border-[#00C853] ml-3 mb-1" style={{letterSpacing: '1px'}}>FREE</span>
-              <div className="flex flex-col items-end mt-2 ml-3 gap-1">
-                <a
-                  href="/assets/round1ppt.pptx"
-                  download
-                  className="font-extrabold text-black text-base sm:text-xl bg-white px-2 sm:px-4 py-1 rounded-full border border-[#00C853] hover:bg-[#00C853] hover:text-white transition-colors duration-200 whitespace-nowrap"
-                  style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}>
-                  PPT Template
-                </a>
-                <span className="text-xs font-semibold text-black flex items-center whitespace-nowrap mt-1 sm:mt-0">
-                  <span className="hidden sm:inline">Click to download <span className="ml-1 text-base align-middle">→</span></span>
-                  <span className="inline sm:hidden">Click to download <span className="ml-1 text-base align-middle">↑</span></span>
-                </span>
+              <div className="flex flex-col items-end mt-2 ml-3 gap-1 w-full">
+                {/* Desktop: Row with text left of button; Mobile: Column with text above button */}
+                <div className="hidden sm:flex flex-row items-center w-full justify-end gap-2">
+                  <span className="text-xs font-semibold text-black whitespace-nowrap">Click to download <span className="ml-1 text-base align-middle">→</span></span>
+                  <a
+                    href="/assets/round1ppt.pptx"
+                    download
+                    className="font-extrabold text-black text-base sm:text-xl bg-white px-2 sm:px-4 py-1 rounded-full border border-[#00C853] hover:bg-[#00C853] hover:text-white transition-colors duration-200 whitespace-nowrap"
+                    style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}>
+                    PPT Template
+                  </a>
+                </div>
+                <div className="flex sm:hidden flex-col items-end w-full">
+                  <a
+                    href="/assets/round1ppt.pptx"
+                    download
+                    className="font-extrabold text-black text-base sm:text-xl bg-white px-2 sm:px-4 py-1 rounded-full border border-[#00C853] hover:bg-[#00C853] hover:text-white transition-colors duration-200 whitespace-nowrap"
+                    style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}>
+                    PPT Template
+                  </a>
+                  <span className="text-xs font-semibold text-black flex items-center whitespace-nowrap mt-1">
+                    Click to download <span className="ml-1 text-base align-middle">↑</span>
+                  </span>
+                </div>
               </div>
             </>
           )}
