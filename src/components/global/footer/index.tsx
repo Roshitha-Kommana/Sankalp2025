@@ -14,6 +14,7 @@ const greatVibes = Great_Vibes({
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Timeline", href: "/timeline" },
+  { name: "Links", href: "/resources" },
   { name: "Team", href: "/team" },
   { name: "Register", href: "https://forms.gle/FiBkTbkz63U89HDWA" },
 ];

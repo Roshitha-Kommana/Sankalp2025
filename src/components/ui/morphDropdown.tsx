@@ -154,7 +154,7 @@ export const PillMenu: FC = () => {
 
             {/* Enhanced content with pulling down effect */}
             <Collapsible.Content>
-              <div className="md:mt-6 flex flex-col  gap-2 px-3">
+              <div className="md:mt-6 flex flex-col  gap-1 px-3">
                 {/* Join Now Button - Mobile Only */}
                 <Link
                   href="https://forms.gle/FiBkTbkz63U89HDWA"
@@ -171,15 +171,15 @@ export const PillMenu: FC = () => {
 
                 <a
                   href="/"
-                  className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group"
+                  className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group text-[13px] md:text-base"
                   style={{
                     opacity: getItemOpacity(0),
                     transform: isOpen ? "translateY(0)" : "translateY(16px)",
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Home</span>
-                    <span className="font-medium text-sm text-[#ccc]">
+                    <span className="font-black text-[13px] md:text-base">Home</span>
+                    <span className="font-medium text-[13px] md:text-sm text-[#ccc]">
                       Back to main page
                     </span>
                   </div>
@@ -193,9 +193,24 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Timeline</span>
-                    <span className="font-medium text-sm text-[#ccc]">
+                    <span className="font-black text-[13px] md:text-base">Timeline</span>
+                    <span className="font-medium text-[13px] md:text-sm text-[#ccc]">
                       Event schedule
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="/resources"
+                  className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group"
+                  style={{
+                    opacity: getItemOpacity(2),
+                    transform: isOpen ? "translateY(0)" : "translateY(16px)",
+                  }}
+                >
+                  <div className="flex flex-col">
+                    <span className="font-black text-[13px] md:text-base">Links</span>
+                    <span className="font-medium text-[13px] md:text-sm text-[#ccc]">
+                      Registration, PPT & Links
                     </span>
                   </div>
                 </a>
@@ -223,12 +238,13 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Team</span>
-                    <span className="font-medium text-sm text-[#ccc]">
+                    <span className="font-black text-[13px] md:text-base">Team</span>
+                    <span className="font-medium text-[13px] md:text-sm text-[#ccc]">
                       Meet the organizers
                     </span>
                   </div>
                 </a>
+
                 <a
                   href="/info"
                   className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group"
@@ -238,20 +254,11 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">Information</span>
-                    <span className="font-medium text-sm text-[#ccc]">
+                    <span className="font-black text-[13px] md:text-base">Information</span>
+                    <span className="font-medium text-[13px] md:text-sm text-[#ccc]">
                       All Info About The Event
                     </span>
                   </div>
-                </a>
-                <a
-                  href="#"
-                  className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group"
-                  style={{
-                    opacity: getItemOpacity(3),
-                    transform: isOpen ? "translateY(0)" : "translateY(16px)",
-                  }}
-                >
                 </a>
 
                 {/* Separator */}

@@ -31,12 +31,25 @@ const Card = ({ badge, title, content, cta, index }: CardProps) => {
       id={`card-${index + 1}`}
     >
       <div className="info-card-inner relative will-change-transform w-full h-full p-4 sm:p-6 md:p-8 flex flex-col gap-4 sm:gap-6 md:gap-8 rounded-xl">
-        <Badge
-          className="inline-block text-[#141414] px-3 py-1.5 rounded-full text-sm sm:text-base md:text-lg font-semibold border-1 border-[#141414] mb-2 sm:mb-3"
-          style={{ backgroundColor: badgeBg }}
-        >
-          {badge}
-        </Badge>
+        {/* Badge and PPT Template button row, with button at right end */}
+        <div className="flex items-center justify-between mb-2 sm:mb-3 w-full">
+          <Badge
+            className="inline-block text-[#141414] px-3 py-1.5 rounded-full text-sm sm:text-base md:text-lg font-semibold border-1 border-[#141414]"
+            style={{ backgroundColor: badgeBg }}
+          >
+            {badge}
+          </Badge>
+          {/* Show PPT Template button only for Round 1, aligned right */}
+          {badge === "Round 1" && (
+            <a
+              href="/assets/round1ppt.pptx"
+              download
+              className="font-extrabold text-black text-base px-3 py-1 rounded-full border border-[#00C853] bg-white hover:bg-[#00C853] hover:text-white transition-colors duration-200"
+              style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}>
+              PPT Template
+            </a>
+          )}
+        </div>
         <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
           {title}
         </h3>
