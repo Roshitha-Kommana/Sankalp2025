@@ -154,7 +154,7 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "14th September 2025",
+      title: "12th September 2025",
       content: (
         <Card
           index={2}
@@ -162,7 +162,7 @@ export default function TimelinePage() {
           title="First Batch Approval"
           content={
             <>
-              <b>Date:</b> 14th September 2025
+              <b>Date:</b> 12th September 2025
               <br />
               First batch of selected teams will be announced on this day.
               <br />
@@ -176,7 +176,7 @@ export default function TimelinePage() {
     },
     
     {
-      title: "17th September 2025",
+      title: "16th September 2025",
         content: (
           <Card
             index={4}
@@ -184,7 +184,7 @@ export default function TimelinePage() {
             title="Final Payment Deadline"
             content={
               <>
-                <b>Deadline:</b> 17th September 2025
+                <b>Deadline:</b> 16th September 2025
                 <br />
                 This is the final date to complete your payment.
                 <br />
