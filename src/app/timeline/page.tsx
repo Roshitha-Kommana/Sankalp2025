@@ -86,7 +86,7 @@ const Card = ({ badge, title, content, cta, index }: CardProps) => {
 export default function TimelinePage() {
   const data = [
     {
-      title: "7th September 2025",
+      title: "8th September 2025",
       content: (
         <Card
           index={1}
@@ -94,7 +94,7 @@ export default function TimelinePage() {
           title="Online Submission (via Google Forms)"
           content={
           <>
-            <b>Starts:</b> 7th September 2025, 9:00 AM IST
+            <b>Starts:</b> 8th September 2025, 9:00 AM IST
             <br />
             <b>Ends:</b> 10th September 2025, 11:59 PM IST
             <br />
