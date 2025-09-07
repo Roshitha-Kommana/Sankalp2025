@@ -18,14 +18,9 @@ export default function LinksPage() {
                   Registration Link
                 </span>
               </div>
-              <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSekd7fI8QG8dnel75GyOnAaf9VSpwTZwtWAkbmnli0k6KMpOA/viewform"
-                target="_blank"
-                className="font-extrabold text-sm px-3 py-1 rounded-full border border-[#00C853] bg-white text-[#00C853] hover:bg-[#00C853] hover:text-white active:bg-[#00C853] active:text-white transition-colors duration-200 w-fit"
-                style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}
-              >
-                Register Now
-              </Link>
+              <span className="font-extrabold text-base px-4 py-2 rounded-xl bg-[#ffffff33] text-[#141414] text-center select-none" style={{backdropFilter:'blur(2px)'}}>
+                Registrations Closed
+              </span>
             </div>
             {/* PPT Template Card */}
             <div className="w-full sm:min-w-[320px] sm:max-w-[350px] sm:w-full rounded-2xl p-5 md:p-8 bg-[#f9ffa5] text-[#141414] flex flex-col gap-3 shadow-xl border border-[#e6e6b2]">
@@ -49,11 +44,15 @@ export default function LinksPage() {
                   Round 1 PPT Submission
                 </span>
               </div>
-              <div className="flex flex-1 items-center justify-center">
-                <span className="font-extrabold text-base px-4 py-2 rounded-xl bg-[#ffffff33] text-[#141414] text-center select-none" style={{backdropFilter:'blur(2px)'}}>
-                  Will be updated shortly
-                </span>
-              </div>
+              <a
+                href="https://forms.gle/ST6t2GCM7NQn1NyU8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-extrabold text-sm px-3 py-1 rounded-full border border-[#00C853] bg-white text-[#00C853] hover:bg-[#00C853] hover:text-white active:bg-[#00C853] active:text-white transition-colors duration-200 w-fit"
+                style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}
+              >
+                Submit PPT
+              </a>
             </div>
           </div>
         </section>
