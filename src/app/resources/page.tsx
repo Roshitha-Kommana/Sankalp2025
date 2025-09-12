@@ -44,15 +44,9 @@ export default function LinksPage() {
                   Round 1 PPT Submission
                 </span>
               </div>
-              <a
-                href="https://forms.gle/ST6t2GCM7NQn1NyU8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-extrabold text-sm px-3 py-1 rounded-full border border-[#00C853] bg-white text-[#00C853] hover:bg-[#00C853] hover:text-white active:bg-[#00C853] active:text-white transition-colors duration-200 w-fit"
-                style={{letterSpacing: '1px', textDecoration: 'none', display: 'inline-block'}}
-              >
-                Submit PPT
-              </a>
+              <span className="font-extrabold text-base px-4 py-2 rounded-xl bg-[#ffffff33] text-[#141414] text-center select-none" style={{backdropFilter:'blur(2px)'}}>
+                Submissions Closed
+              </span>
             </div>
           </div>
         </section>
